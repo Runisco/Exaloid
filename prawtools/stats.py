@@ -32,10 +32,6 @@ class SubRedditStats(object):
 
     post_prefix = tt('Subreddit Stats:')
     post_header = tt('---\n###{0}\n')
-    post_footer = tt('>Generated with [BBoe](/u/bboe)\'s [Subreddit Stats]'
-                     '(https://github.com/praw-dev/prawtools)  \n{0}'
-                     'SRS Marker: {1}')
-    re_marker = re.compile(r'SRS Marker: (\d+)')
 
     @staticmethod
     def _previous_max(submission):
